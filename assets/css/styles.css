@@ -1,0 +1,40 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-image: url(../img/download.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: auto;
+    color: whitesmoke;
+}
+nav{
+    float: right;
+}
+nav ul {
+    font-family: Arial;
+    background-color: white;
+    /* add up background colour to the element */
+    list-style-type: none;
+    /* remove the bullets from the list */
+    margin: 0;
+    /* resets the default browser margin */
+    padding: 0;
+    /* resets the default browser padding */
+    /* width: 200px; */
+    overflow: hidden;
+    /* overflow hidden prevents the list item to go outside the list */
+    
+}
+nav ul li {
+    float: left;
+    /* makes the list elements float next to each other */
+}
+nav ul li a {
+    display: block;
+    /* allows to specify padding height marging and width */
+    text-decoration: none;
+    /* remove the underline from the link */
+    color: black;
+    padding: 8px 16px;
+    /* add some padding between each element */
+    
+}
