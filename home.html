@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Management System</title>
-
+ 
     <!--
     This is a student managent system which keeps track of students enrolled in the school.
 
@@ -14,56 +15,158 @@
      3. Fees of the students 
      4. Report book.
     -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 </head>
+
 <body>
-    <!-- This is the header of the page -->
-    <header>
+    <div class="container">
 
-        Tahidi High
 
-    </header>
-<!-- This is the end of the header of the page -->
+        <!-- This is the header of the page -->
+        <header>
 
-<nav>
-  <ul>
-<!-- this list of links are used to connect to other pages on the website -->
- <!-- we create a link using
+            <div class="text-primary">
+                Tahidi High
+            </div>
+
+
+        </header>
+        <!-- This is the end of the header of the page -->
+
+        <nav>
+            <ul>
+                <!-- this list of links are used to connect to other pages on the website -->
+                <!-- we create a link using
 
     <a href="https://www.facebook.com" target="_blank">Facebook</a>
       if the document is in the same folder - ./home.html
        if the document is in a different folder - ../l
    -->
-    <li><a href="home.html" >Home</a></li>
-    
+                <li><a href="home.html">Home</a></li>
 
-    <li><a href="pages/services.html" >Services / Courses</a></li>
 
-    <li><a href="pages/about_us.html" >About Us</a></li>
-    
-  </ul>
-</nav>
+                <li><a href="pages/services.html">Services / Courses</a></li>
 
-<!-- This is the start of the main content -->
-    <main>
-        <h1> welcome to tahidi school</h1>
-        <!-- The artcle starts here -->
-        <article>
+                <li><a href="pages/about_us.html">About Us</a></li>
 
-            <section>
+            </ul>
+        </nav>
+        <!-- <img id="s8" src=".\assets\img\download.jpeg"> -->
 
-            </section>
+        <!-- This is the start of the main content -->
+        <main>
+            <h1> welcome to tahidi school</h1>
+            <!-- The artcle starts here -->
+           
 
-        </article>
-<!-- The main article ends here -->
- 
-    </main>
+                <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                    <!-- <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
+                                preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                               
+                            </svg> -->
+                            <img src="./assets/img/download.jpeg" width="100%" height="100%">
+                          
 
-       
-    <!-- This is the footer of the page -->
-    <footer>
+                            <div class="container">
+                                 
+                                <div class="carousel-caption text-start">
+                                    
+                                    <h1>Tahidi high</h1>
+                                    <p class="opacity-75">
+                                        Some representative placeholder content for the first slide of
+                                        the carousel.
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-lg btn-primary" href="./sign in.html">Sign up today</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            
 
-    </footer>
+                            <!-- <svg aria-hidden="true" class="bd-placeholder-img" height="100%" 
+                                preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect  fill="var(--bs-secondary-color)"></rect>
+                            </svg> -->
+                            <img src="./assets/img/bus.jfif" width="100%" height="100%">
+                            <div class="container">
+                                
+                                <div class="carousel-caption">
+                                    <h1>School bus</h1>
+                                    <p>
+                                        Some representative placeholder content for the second slide
+                                        of the carousel.
+                                    </p>
+                                    <p><a class="btn btn-lg btn-primary" href="./pages/services.html">Learn more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
+                                preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg> -->
+                            <img src="./assets/img/play ground.jfif" width="100%" height="100%" >
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+                                    <h1>One more for good measure.</h1>
+                                    <p>
+                                        Some representative placeholder content for the third slide of
+                                        this carousel.
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            
+            <!-- The main article ends here -->
+
+        </main>
+
+
+        <!-- This is the footer of the page -->
+        <footer>
+
+        </footer>
+    </div>
 </body>
+
+<script src="./assets/js/bootstrap.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval : 10
+
+    })
+</script>
+
 </html>
